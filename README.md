@@ -5,6 +5,7 @@
 - Clone this repository to your local machine
 - Create a virtual environment `virtualenv venv`
 - Activate the virtual environment `source venv/bin/activate`(Linux) or `source venv/Scripts/activate`(Windows)
+- Install dependencies using `pip install -r requirements.txt`
 
 ## Important: Change the `SECRET_KEY` in [`settings.py`](core/settings.py)
 
@@ -17,6 +18,7 @@ from django.core.management.utils import get_random_secret_key
 # generating and printing the SECRET_KEY
 print(get_random_secret_key())
 ```
+
 Paste the output to `SECRET_KEY` in [`settings.py`](core/settings.py)
 
 ### Custom User Model
